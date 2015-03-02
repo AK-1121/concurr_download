@@ -1,0 +1,11 @@
+Script tests several ways of downloading mp3 files from web server. Script downloads mp3 files in the same directory. You can choose:
+
+- one of remote web servers to be downloaded from;
+- how many files you want to download in your test;
+- one of ways to download files: 
+    0 - Serial implementation, 
+    1 - Threading (number of threads = number of links) https://docs.python.org/3.4/library/threading.html; 
+    2 - Multiprocessing https://docs.python.org/3.4/library/multiprocessing.html; 
+    3 - Concurrent_futures (ThreadPool-, ProcessPoolExecutor) https://docs.python.org/3/library/concurrent.futures.html.
+
+In variants 2 and 3 you can also choose a number of processes / threads.
